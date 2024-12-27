@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+
+    background-color: rgb(106, 208, 242);
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid rgb(44, 38, 38);
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+.valientes {
+    position: relative;
+    width: 50px;
+    float:left;
+    margin-top:-8px;
+    cursor: pointer;
+
+}
+
+
+nav ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(24, 22, 22);}
+    
+    
+
+
+/* main */
+
+main {
+
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+
+/* Logos de Redes Sociales */
+.redes{
+   display: inline-block;
+   font-size: 44px;
+   animation:float 5s ease-in-out infinite ;
+   cursor: pointer;
+}
+.bi bi-facebook{
+    animation-delay: 1s;
+    }
+
+.bi bi-whatsapp{
+    animation-delay: 2s;
+}
+@keyframes float  {
+   0% { transform:translateY(0); 
+}
+50% { 
+    transform: translateY(-15px);
+}
+100%{
+    transform: translateY(0);
+}
+ }
+ .redes{display: flex;
+    column-gap: 25px;
+}
+
+
+h1,
+h2 {
+
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+/* Destinos */
+.contenedorDestinos {
+    margin: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+
+}
+
+.imgDestino {
+    display:block;
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    }
+    .imgDestino{
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 3px 5px rgba(15,15, 15,.5);
+    }
+
+.contenedorDestinos, p {
+    background-color: rgb(116, 198, 239);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+/* ifreme */
+iframe,.video-container {
+    display: block;
+    margin: auto;
+    position: relative;
+   width: 100%;
+    }
+
+
+/* Formulario */
+form {
+    margin-top: 20px;
+
+}
+
+/* label */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(61, 10, 1);
+}
+
+input,
+textarea {
+    display: block;
+    width: auto;
+    padding: 10px;
+    border: 2px solid color(srgb red);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnFormularios {
+    background-color: azure;
+    color: rgb(22, 21, 22);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.rock-salt-regular,
+h1,
+li,
+h3 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular,
+h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* vista tablet */
+/* 768px hasta 1023 */
+
+
+    /* estilo para Header */
+    .redes-conteiner{
+        flex: auto;
+        
+     }
+    section{
+        display: flex;
+        width: 600px;
+        height: 430px;
+    }
+    section img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease; 
+    }
+    section img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter:contrast(120%) ;
+    }
+  
+    
+  
+   
